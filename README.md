@@ -10,26 +10,18 @@ An Okta developer account with an Okta application set up for Email Magic Link a
 
 Start by cloning the Okta Auth JS SDK sample repository to your local machine. Open your terminal and run the following command:
 
-bash
-Copy code
+**Code:**
 git clone https://github.com/okta/okta-auth-js.git
 Navigate to the express-embedded-auth-with-sdk sample:
-
-bash
-Copy code
 cd okta-auth-js/samples/generated/express-embedded-auth-with-sdk
 
 **Step 2: Configure Your Environment**
 
 Create a .env file in the root directory of the project to store your Okta configuration values. You can copy the .env.template file and fill in the appropriate values.
-
-bash
-Copy code
+**Code:**
 cp .env.template .env
 Edit the .env file and replace the placeholders with your Okta application details:
 
-env
-Copy code
 OKTA_ORG_URL=https://your-okta-domain
 OKTA_CLIENT_ID=your-okta-client-id
 OKTA_CLIENT_SECRET=your-okta-client-secret
@@ -38,16 +30,14 @@ OKTA_CLIENT_SECRET=your-okta-client-secret
 
 Install the project dependencies using npm:
 
-bash
-Copy code
+**Code:**
 npm install
 
 **Step 4: Start the Application**
 
 Start the Express.js application:
 
-bash
-Copy code
+**Code:**
 npm start
 Your Okta Email Magic Link authentication integration should now be running locally.
 
